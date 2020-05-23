@@ -98,6 +98,128 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /*-----------------------Base Header - Footer Styles ----------------------*/
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .social-icons p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*----------------Mobile Styling ---------------*/
+
+/*---------HOMEPAGE---------*/
+
+/*HERO AREA*/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap
+}
+
+/*ASIDE*/
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/*FEATURES*/
+
+.features {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.features .features-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/*REVIEWS*/
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/*---------About Page Styling ----------*/
+
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+/*------- FAQ Styling--------*/
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.faq-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

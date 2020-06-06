@@ -150,7 +150,7 @@ textarea {
   }
   
   figure {
-  
+    margin: 0;
   }
   
   address {
@@ -169,6 +169,14 @@ textarea {
 
 header {
   padding: 15px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header,
@@ -264,6 +272,7 @@ footer .copyright {
   flex-flow: row wrap;
   background: url('../img/hero-area.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -316,6 +325,8 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background: url('../img/activities.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features p {
@@ -346,6 +357,14 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+}
+
+.reviews figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -511,12 +530,27 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
+
   /* HEADER */
 
   header {
     justify-content:space-around;
     padding: 33px 0;
  
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header .content-wrapper {
@@ -537,27 +571,16 @@ input[type=button] {
       display: none;
   }
 
-  /* Footer */
-  footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-}
-
-footer .contact {
-    margin-bottom: 0;
-}
-
-footer .copyright {
-    width: 100%;
-}
 
 /*HOME PAGE */
+
+/*Hero AREA*/
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -576,6 +599,10 @@ footer .copyright {
 
   /* Features */
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -585,19 +612,60 @@ footer .copyright {
   }
 
   .features .features-item-description {
-      width: 50%;
+      width: 62%;
   }
 
   /* Reviews */
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+   
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between; 
   }
-  
-  .reviews article div {
-      width: 49%;   
+
+    /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
   }
 
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+    
   /*--------------------ABOUT PAGE ---------------------*/
   
   .mission-content {
@@ -621,6 +689,10 @@ footer .copyright {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* FAQ PAGE */
 
   .faq .content-wrapper {
@@ -634,67 +706,102 @@ footer .copyright {
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
   
 }
 
 
 @media only screen and (min-width: 1200px) {
-  /* DESKTOP STYLES */
-
+    /* DESKTOP STYLES */
+    
     .content-wrapper {
       max-width: 960px;
   }
 
-  /* Hero */
-  .hero-area h1 {
-    width: 60%;
+    h2 {
+      font-size: 2.25em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
+    /* Hero */
+    .hero-area h1 {
+      font-size: 3.75em;
+      width: 80%;
   }
 
-  /* Aside */
-  aside .content-wrapper {
-    justify-content: space-around;
-  }
+    /* Aside */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 30%;
-  }
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
 
-  /* Features */
-  .features h2 {
-    width: 90%;
-  }
+    .form-description p {
+      font-size: 1.125em;
+    }
 
-  .features article {
-    flex-basis: 33%;
-  }
+    /* Features */
+    .features h2 {
+      width: 90%;
+    }
 
-  /* Reviews */ 
-  .reviews article div {
-    width: 42%;
-  }
+    .features article {
+      flex-basis: 33%;
+    }
+        
+    /* Reviews */ 
+    .reviews article div {
+      width: 42%;
+    }
+
+    footer h4 {
+      font-size: 1.875em;
+    }
+  
 
   /* ==========================================================================
   About Page
   ========================================================================== */
   .mission h2,
   .contact-section .content-wrapper h2 {
-    width: 95%;
+      width: 95%;
+      font-size: 3em;
   }
 
-  .contact-section .content-wrapper h2 {
-    margin-bottom: 46px;
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
+    /* ==========================================================================
+    FAQ Page
+    ========================================================================== */
+    .faq h2 {
+      width: 100%;
+    }
 
-  /* ==========================================================================
-  FAQ Page
-  ========================================================================== */
-  .faq h2 {
-    width: 100%;
+    .faq h4,
+    .faq p {
+        font-size: 1.125em;
+        line-height: 1;
+    }
+    
   }
-   
-}
 
 
 /* ==========================================================================

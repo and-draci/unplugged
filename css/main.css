@@ -99,7 +99,7 @@ textarea {
    ========================================================================== */
 
   
-  /* General Styles */
+  /* Global Styles */
   
   html {
     font-size: 16px;
@@ -146,7 +146,7 @@ textarea {
   }
   
   img {
-  
+    width: 100%;
   }
   
   figure {
@@ -261,7 +261,9 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap
+  flex-flow: row wrap;
+  background: url('../img/hero-area.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {

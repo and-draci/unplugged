@@ -251,6 +251,10 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+footer .footer-content {
+text-align: center;
+}
+
 footer .contact {
   margin-bottom: 50px;
 }
@@ -344,6 +348,7 @@ input[type=button] {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .features article {

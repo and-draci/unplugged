@@ -234,6 +234,11 @@ footer p {
   margin: 0;
 }
 
+footer i {
+  font-size: 1em;
+  padding-right: 20px;
+}
+
 footer .social-icons {
   display: flex;
   align-items: center;
